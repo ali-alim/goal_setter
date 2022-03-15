@@ -5,7 +5,7 @@ const goalSchema = mongoose.Schema({
     //adding user reference
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        required: true,
+        // required: true,
         ref: 'User'
     },
     text: {
