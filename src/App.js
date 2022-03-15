@@ -2,7 +2,7 @@
 function App() {
   return (
     <div className="App">
-      Hello Johny, fuck this react error
+      THIS IS A NODE API WITH JWT, CONNECTED TO MONGO DB
     </div>
   );
 }
