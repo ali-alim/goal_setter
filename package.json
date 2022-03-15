@@ -1,5 +1,5 @@
 {
-  "name": "search_filer",
+  "name": "tm_mern",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,7 +45,15 @@
     "react-scripts": "^5.0.0"
   },
   "main": "index.js",
-  "author": "",
+  "author": "TM&ALI",
   "license": "ISC",
-  "description": ""
+  "description": "Mern Stack App",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali-alim/tm_mern.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ali-alim/tm_mern/issues"
+  },
+  "homepage": "https://github.com/ali-alim/tm_mern#readme"
 }
