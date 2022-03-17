@@ -20,6 +20,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
