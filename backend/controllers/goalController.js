@@ -44,22 +44,15 @@ const updateGoal = asyncHandler(async (req, res) => {
 
   const user = await User.findById(req.user.id);
 
-  console.log(goal.user); // udali
-  console.log(user.id); //udali
-
   if (!user) {
     res.status(401);
     throw new Error("User not found");
-  } else {
-    console.log(goal.user); // udali
-  }
+  } 
 
-  //check if loggen in user matches the goal user
+  //check if logged in user matches the goal user
   if (goal.user.toString() !== user.id) {
     res.status(401);
     throw new Error("User not authorized");
-  } else {
-    console.log(user.id); // udali
   }
 
   const updatedGoal = await Goal.findByIdAndUpdate(req.params.id, req.body, {
@@ -84,10 +77,7 @@ const deleteGoal = asyncHandler(async (req, res) => {
     res.status(401);
     throw new Error("User not found");
   }
-  if (goal.user.toString() !== user.id) {
-    res.status(401);
-    throw new Error("User not authorized");
-  }
+
   //check if loggen in user matches the goal user
   if (goal.user.toString() !== user.id) {
     res.status(401);
