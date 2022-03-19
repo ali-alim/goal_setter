@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #2476FF;
 }
 
 p {
@@ -31,7 +31,7 @@ li {
 h1,
 h2,
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -68,7 +68,7 @@ h3 {
 }
 
 .header ul li a:hover {
-  color: #777;
+  color: #2476FF;
 }
 
 .header ul li a svg {
@@ -83,17 +83,19 @@ h3 {
 }
 
 .heading p {
-  color: #828282;
+  color: #2476FF;
 }
 
 .goals {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, fr); */
   gap: 10px;
 }
 
 .goal {
-  background-color: #f4f4f4;
+  background-color: #eff6ff;
+  /* background-color: #fff28d; */
+  /* background-color: #ffdca3; */
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
@@ -137,10 +139,10 @@ h3 {
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 1px solid #2476FF;
   border-radius: 5px;
-  background: #000;
-  color: #fff;
+  background: #2476FF;
+  color: #eff6ff;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -157,7 +159,7 @@ h3 {
 
 .btn-reverse {
   background: #fff;
-  color: #000;
+  color: #eff6ff;
 }
 
 .btn-block {
@@ -215,6 +217,6 @@ h3 {
 }
 
 #red{
-  color: red;
+  color: #fff28d;
   text-decoration: underline;
 }

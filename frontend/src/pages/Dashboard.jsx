@@ -38,8 +38,8 @@ function Dashboard() {
   return (
     <>
       <section className="heading">
-        <h1>Welcome {user && user.name}</h1>
-        <p>Goals Dashboard</p>
+        <h1 style={{color:'#00d88f'}}>Welcome, {user && user.name} !</h1>
+        <p>Your Goals Dashboard</p>
       </section>
       <GoalForm />
       {goals.length >= 5 ? (
