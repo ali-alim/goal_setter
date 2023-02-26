@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const API_URL = '/api/goals/'
-
 //create a new goal
 const createGoal = async (goalData, token) => {
     const config = {
@@ -9,7 +7,7 @@ const createGoal = async (goalData, token) => {
             Authorization:`Bearer ${token}`
         }
     }
-    const response = await axios.post(API_URL, goalData, config)
+    const response = await axios.post(process.env.REACT_APP_API_URL + "/goals", goalData, config)
     return response.data
 }
 
@@ -21,7 +19,7 @@ const getGoals = async(token) => {
         },        
     }
 
-    const response = await axios.get(API_URL, config)
+    const response = await axios.get(process.env.REACT_APP_API_URL + "/goals", config)
 
     return response.data
 }
@@ -33,7 +31,7 @@ const deleteGoal = async(goalId, token) => {
             Authorization: `Bearer ${token}`,
         }, 
     }
-        const response = await axios.delete(API_URL + goalId, config)
+        const response = await axios.delete(process.env.REACT_APP_API_URL + "/goals" + goalId, config)
         return response.data
     }
 

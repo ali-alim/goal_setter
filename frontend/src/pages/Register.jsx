@@ -7,7 +7,6 @@ import { FaUser } from "react-icons/fa";
 import Spinner from "../components/Spinner";
 
 function Register() {
-  // create formData object using useState
   const [formData, setFormData] = useState({
     name:'',
     email:'',
